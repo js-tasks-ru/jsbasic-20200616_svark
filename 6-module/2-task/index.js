@@ -10,7 +10,6 @@ export default class ProductCard {
   }
 
   get elem() {
-    console.log(this._root);
     return this._root
   }
 
@@ -69,7 +68,6 @@ export default class ProductCard {
   }
 
   createButton(className, product) {
-    console.log(product);
     let result = null
     const event = new CustomEvent('product-add', {
       detail: product.id,
