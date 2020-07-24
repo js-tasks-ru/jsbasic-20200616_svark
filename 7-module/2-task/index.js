@@ -41,7 +41,7 @@ export default class Modal {
 
   close() {
     document.querySelector('body').classList.remove('is-modal-open')
-    document.querySelector('.modal').remove()
+    this.root.remove()
   }
 
   createButton(className) {
